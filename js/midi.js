@@ -4,7 +4,7 @@ const ALL_NOTES = [];
 for (let i = A0; i <= C8; i++) {
     ALL_NOTES.push(i);
 }
-let loop = function() { };
+let loop;
 const toPlay = [];
 
 
@@ -43,7 +43,6 @@ function play(notes, duration, style, delay) {
     MIDI.chordOff(0, notes, delay + duration);
 }
 
-// noinspection JSUnusedGlobalSymbols
 function multiplay(chords, duration, style) {
     chords.forEach((chord, i) => play(chord, duration / chords.length, style, i * duration / chords.length));
 }
@@ -51,9 +50,7 @@ function multiplay(chords, duration, style) {
 function stop() {
     clearInterval(loop);
 
-    while (toPlay.length > 0) {
-        clearTimeout(window.toPlay.pop());
-    }
+    while (toPlay.length > 0) clearTimeout(toPlay.pop());
 
     MIDI.chordOff(0, ALL_NOTES, 0);
 }
@@ -82,4 +79,39 @@ function midi(name, notes, duration, style, tonic, lowest, highest) {
     midi.appendChild(piano(notes, tonic, lowest, highest));
 
     return midi;
+}
+
+function progression(chords, duration, style) {
+    const div = document.createElement('div');
+    div.setAttribute('id', 'play-div');
+
+    const playLabel = document.createElement('label');
+    playLabel.setAttribute('id', 'play-label');
+    playLabel.appendChild(document.createTextNode('Play'));
+
+    const switchLabel = document.createElement('label');
+    switchLabel.setAttribute('id', 'switch-label');
+
+    const input = document.createElement('input');
+    input.setAttribute('id', 'play-input');
+    input.setAttribute('type', 'checkbox');
+    input.addEventListener('change', () => {
+        if (input.checked) {
+            multiplay(chords, duration, style);
+            loop = setInterval(() => multiplay(chords, duration, style), duration * 1000);
+        } else {
+            stop();
+        }
+    });
+
+    const slider = document.createElement('div');
+    slider.setAttribute('id', 'slider-div');
+
+    switchLabel.appendChild(input);
+    switchLabel.appendChild(slider);
+
+    div.appendChild(playLabel);
+    div.appendChild(switchLabel);
+
+    return div;
 }

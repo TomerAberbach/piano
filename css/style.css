@@ -144,3 +144,63 @@ main {
 .on-key-div {
   background-color: #0FACF3;
 }
+
+#play-div {
+    margin: auto auto 15px auto;
+    font-size: 2.75vw;
+}
+
+#switch-label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 7.5vw;
+    height: 5vh;
+
+    margin-left: 0.5vw;
+}
+
+#play-label {
+    margin-right: 10px;
+}
+
+#play-input {
+    visibility: hidden;
+}
+
+#slider-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5vh;
+    background-color: #132B36;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#slider-div:before {
+    position: absolute;
+    content: '';
+    height: 3vh;
+    width: 3vh;
+    left: 1vh;
+    bottom: 1vh;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s;
+}
+
+#play-input:checked + #slider-div {
+    background-color: #0FACF3;
+}
+
+#play-input:focus + #slider-div {
+    box-shadow: 0 0 1px #0FACF3;
+}
+
+#play-input:checked + #slider-div:before {
+    transform: translateX(calc(7.5vw - 5vh));
+}

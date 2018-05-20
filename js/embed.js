@@ -1,5 +1,6 @@
 function parse() {
     const main = document.getElementsByTagName('main')[0];
+    const chords = [];
 
     hash().split(',').map(s => {
         for (let i = s.length; i > 0; i--) {
@@ -18,6 +19,7 @@ function parse() {
                 }
 
                 chord = transpose(chord, OCTAVE * 5);
+                chords.push(chord);
 
                 return midi(
                     s.substr(0, 1).toUpperCase() + s.substr(1).toLowerCase(),
@@ -29,7 +31,7 @@ function parse() {
 
     const params = query();
 
-    if ('progression' in params && params['progression']) {
-        //document.getElementsByTagName('body')[0].appendChild()
+    if (params.has('progression') && params.get('progression')) {
+        document.getElementsByTagName('body')[0].appendChild(progression(chords, 5, 'block'));
     }
 }
