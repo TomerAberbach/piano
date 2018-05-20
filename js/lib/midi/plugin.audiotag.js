@@ -88,15 +88,15 @@
 		};
 	
 		midi.noteOff = function(channel, note, delay) {
- 			var id = noteToKey[note];
- 			if (!notes[id]) return;
- 			if (delay) {
- 				return setTimeout(function() {
- 					stopChannel(channel, id);
- 				}, delay * 1000)
- 			} else {
- 				stopChannel(channel, id);
- 			}
+// 			var id = noteToKey[note];
+// 			if (!notes[id]) return;
+// 			if (delay) {
+// 				return setTimeout(function() {
+// 					stopChannel(channel, id);
+// 				}, delay * 1000)
+// 			} else {
+// 				stopChannel(channel, id);
+// 			}
 		};
 	
 		midi.chordOn = function(channel, chord, velocity, delay) {

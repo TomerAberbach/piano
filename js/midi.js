@@ -5,15 +5,11 @@ for (let i = A0; i <= C8; i++) {
     ALL_NOTES.push(i);
 }
 let loop;
-const toPlay = [];
 
-
-onload = function() {
-    MIDI.loadPlugin({
-        soundfontUrl: 'sf/',
-        instrument: 'acoustic_grand_piano'
-    });
-};
+window.addEventListener('load', () => MIDI.loadPlugin({
+    soundfontUrl : 'sf/',
+    instrument : 'acoustic_grand_piano'
+}));
 
 function instrument(name) {
     stop();
@@ -24,7 +20,7 @@ function instrument(name) {
 
 function play(notes, duration, style, delay) {
     if (style === 'block') {
-        toPlay.push(MIDI.chordOn(0, notes, 127, delay));
+        MIDI.chordOn(0, notes, 127, delay);
     } else {
         let individual;
 
@@ -49,10 +45,7 @@ function multiplay(chords, duration, style) {
 
 function stop() {
     clearInterval(loop);
-
-    while (toPlay.length > 0) clearTimeout(toPlay.pop());
-
-    MIDI.chordOff(0, ALL_NOTES, 0);
+    MIDI.stopAllNotes();
 }
 
 function midi(name, notes, duration, style, tonic, lowest, highest) {
