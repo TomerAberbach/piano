@@ -31,8 +31,29 @@
         <meta property="og:site_name" content="Piano"/>
 
         <link rel="stylesheet" href="css/style.css"/>
+
+        <script type="text/javascript" src="js/lib/shim/Base64.js"></script>
+        <script type="text/javascript" src="js/lib/shim/Base64binary.js"></script>
+        <script type="text/javascript" src="js/lib/shim/WebAudioAPI.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/audioDetect.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/gm.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/loader.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/plugin.audiotag.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/plugin.webaudio.js"></script>
+        <script type="text/javascript" src="js/lib/js/midi/plugin.webmidi.js"></script>
+        <script type="text/javascript" src="js/lib/js/util/dom_request_xhr.js"></script>
+        <script type="text/javascript" src="js/lib/js/util/dom_request_script.js"></script>
+
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="js/piano.js"></script>
+        <script type="text/javascript" src="js/midi.js"></script>
+        <script type="text/javascript" src="js/embed.js"></script>
     </head>
     <body>
-
+        <p><a href="https://github.com/TomerADev/piano" target="_blank">Piano</a></p>
+        <main></main>
+        <script>
+            parse();
+        </script>
     </body>
 </html>
