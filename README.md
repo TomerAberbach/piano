@@ -3,13 +3,13 @@ A resizable and responsive iframe embeddable piano chords display and player.
 
 # Examples
 
-See in action [here](http://tomeraberbach.com/html/article/piano.html).
+See in action [here](https://tomeraberba.ch/html/article/piano.html).
 
 ## Cmaj
 ```html
 <iframe frameborder="0"
         width="800px" height="400px"
-        src="http://tomeraberbach.com/piano#cmaj">
+        src="https://tomeraberba.ch/piano#cmaj">
 </iframe>
 ```
 
@@ -17,7 +17,7 @@ See in action [here](http://tomeraberbach.com/html/article/piano.html).
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
-        src="http://tomeraberbach.com/piano#amaj,emaj,f#min,dmaj">
+        src="https://tomeraberba.ch/piano#amaj,emaj,f#min,dmaj">
 </iframe>
 ```
 
@@ -25,6 +25,6 @@ See in action [here](http://tomeraberbach.com/html/article/piano.html).
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
-        src="http://tomeraberbach.com/piano?progression=true#cmaj7,c#min7b5,dmin7,ddim7">
+        src="https://tomeraberba.ch/piano?progression=true#cmaj7,c#min7b5,dmin7,ddim7">
 </iframe>
 ```
