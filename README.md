@@ -30,6 +30,10 @@ The following HTML displays playable chords. See it in action [here](https://tom
 </iframe>
 ```
 
+## Contributing
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/TomerADev/piano/issues/new).
+
 ## Author
 
 **Tomer Aberbach**
