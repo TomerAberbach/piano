@@ -10,7 +10,7 @@ const cssnano = require('cssnano')
 const imagemin = require('gulp-imagemin')
 const uglify = require('gulp-uglify-es').default
 
-const clean = () => del(['./public'])
+const clean = () => del(['dist'])
 gulp.task('clean', clean)
 
 const html = () =>
