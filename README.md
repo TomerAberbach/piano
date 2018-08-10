@@ -32,18 +32,18 @@ The following HTML displays playable chords. See it in action [here](https://tom
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/TomerADev/piano/issues/new).
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/TomerAberbach/piano/issues/new).
 
 ## Author
 
 **Tomer Aberbach**
 
-* [Github](https://github.com/TomerADev)
+* [Github](https://github.com/TomerAberbach)
 * [NPM](https://www.npmjs.com/~tomeraberbach)
 * [LinkedIn](https://www.linkedin.com/in/tomer-a)
 * [Website](https://tomeraberba.ch)
 
 ## License
 
-Copyright © 2018 [Tomer Aberbach](https://github.com/TomerADev)
-Released under the [MIT license](https://github.com/TomerADev/piano/blob/master/LICENSE).
+Copyright © 2018 [Tomer Aberbach](https://github.com/TomerAberbach)
+Released under the [MIT license](https://github.com/TomerAberbach/piano/blob/master/LICENSE).
