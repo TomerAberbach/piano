@@ -7,6 +7,7 @@
 The following HTML displays playable chords. See it in action [here](https://tomeraberba.ch/html/article/piano.html).
 
 ### Cmaj
+
 ```html
 <iframe frameborder="0"
         width="800px" height="400px"
@@ -15,6 +16,7 @@ The following HTML displays playable chords. See it in action [here](https://tom
 ```
 
 ### Amaj, Emaj, F#min, Dmaj
+
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
@@ -23,6 +25,7 @@ The following HTML displays playable chords. See it in action [here](https://tom
 ```
 
 ### Cmaj7, C#min7b5, Dmin7, Ddim7 With Play Button
+
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
@@ -30,20 +33,6 @@ The following HTML displays playable chords. See it in action [here](https://tom
 </iframe>
 ```
 
-## Contributing
-
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/TomerAberbach/piano/issues/new).
-
-## Author
-
-**Tomer Aberbach**
-
-* [Github](https://github.com/TomerAberbach)
-* [NPM](https://www.npmjs.com/~tomeraberbach)
-* [LinkedIn](https://www.linkedin.com/in/tomer-a)
-* [Website](https://tomeraberba.ch)
-
 ## License
 
-Copyright © 2019 [Tomer Aberbach](https://github.com/TomerAberbach)
-Released under the [MIT license](https://github.com/TomerAberbach/piano/blob/master/LICENSE).
+[MIT](https://github.com/TomerAberbach/piano/blob/master/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
