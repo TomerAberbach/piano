@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "piano",
   "author": "Tomer Aberbach <tomeraberbach@gmail.com> (https://tomeraberba.ch)",
   "scripts": {
