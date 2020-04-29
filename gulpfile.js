@@ -33,7 +33,7 @@ const img = () =>
   gulp.src('src/**/*.{gif,jpg,jpeg,png,svg}')
     .pipe(imagemin([
       imagemin.gifsicle(),
-      imagemin.jpegtran(),
+      imagemin.mozjpeg(),
       imagemin.optipng(),
       imagemin.svgo({plugins: [{removeTitle: false}]})
     ]))
