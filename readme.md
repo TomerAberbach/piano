@@ -35,4 +35,4 @@ The following HTML displays playable chords. [See it in action](https://tomerabe
 
 ## License
 
-[MIT](https://github.com/TomerAberbach/piano/blob/master/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
+[MIT](https://github.com/TomerAberbach/piano/blob/main/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
