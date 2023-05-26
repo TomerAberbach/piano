@@ -4,7 +4,7 @@
 
 ## Usage
 
-The following HTML displays playable chords. [See it in action](https://tomeraberba.ch/html/post/piano.html).
+The following HTML displays playable chords.
 
 ### Cmaj
 
