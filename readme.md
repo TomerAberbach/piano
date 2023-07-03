@@ -20,7 +20,7 @@ The following HTML displays playable chords.
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
-        src="https://tomeraberba.ch/piano#amaj,emaj,f#min,dmaj">
+        src="https://tomeraberbach.github.io/piano#amaj,emaj,f#min,dmaj">
 </iframe>
 ```
 
@@ -29,7 +29,7 @@ The following HTML displays playable chords.
 ```html
 <iframe frameborder="0"
         width="1200px" height="400px"
-        src="https://tomeraberba.ch/piano?progression=true#cmaj7,c#min7b5,dmin7,ddim7">
+        src="https://tomeraberbach.github.io/piano?progression=true#cmaj7,c#min7b5,dmin7,ddim7">
 </iframe>
 ```
 
