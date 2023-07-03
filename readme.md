@@ -11,7 +11,7 @@ The following HTML displays playable chords.
 ```html
 <iframe frameborder="0"
         width="800px" height="400px"
-        src="https://tomeraberba.ch/piano#cmaj">
+        src="https://tomeraberbach.github.io/piano#cmaj">
 </iframe>
 ```
 
